@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testng testing]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testng with xml(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="sdet.testing">
+        <methods>
+          <include name="loginnn"/>
+        </methods>
+      </class> <!-- sdet.testing -->
+    </classes>
+  </test> <!-- Testng with xml(failed) -->
+</suite> <!-- Failed suite [testng testing] -->

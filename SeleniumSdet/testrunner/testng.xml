@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng testing">
+  <test name="Testng with xml">
+	  <parameter name="browser" value="chrome"></parameter>
+	  <groups>
+		  <run>
+			  <include name="sanity"></include>
+			    <include name="smoke"></include>
+
+		  </run>
+	  </groups>
+    <classes>
+      <class name="sdet.testing"/>
+      <class name="sdet.TestngMethods"> 
+		  <methods> 
+			  <include name="hello"></include>
+		
+		  </methods>
+		  </class>
+		  <class name="sdet.testngmethods2"/> 
+		  
+		  
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
